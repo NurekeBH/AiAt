@@ -120,6 +120,7 @@ export default class Dowloaded extends Component {
 
         return (
 
+        
           
             is_loadingBook ?
                 <Loader />
