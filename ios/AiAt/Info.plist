@@ -40,7 +40,7 @@
 	<key>NSCameraUsageDescription</key>
 	<string>$(PRODUCT_NAME) Доступ к фотографиям требуеться для прикрепления выбранных фотографии к приложения</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string/>
+	<string></string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>$(PRODUCT_NAME) Доступ к фотографиям требуеться для прикрепления выбранных фотографии к приложения</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
