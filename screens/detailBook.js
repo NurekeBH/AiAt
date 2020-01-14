@@ -121,7 +121,7 @@ export default class DetailBook extends Component {
                 .then(response2 => {
                   console.log('PlayBook2', response2.data);
 
-                  if (response2.data.version == 8 && Platform.OS === 'ios') {
+                  if (response2.data.version == 9 && Platform.OS === 'ios') {
 
                     _navigation.navigate('OpenPlayer', { play: true, book_id: this.book_id, token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjhkYzUxZjRlMzBhODA5ZjEwNTFmNmFjMmZlN2YyNmI2ZmQyNGQwMmNmY2U4YzFkMDM3N2MyYjJkYjMxMjZiMmVjYjc3NDI5ODY2YzMyMzQ4In0.eyJhdWQiOiIxIiwianRpIjoiOGRjNTFmNGUzMGE4MDlmMTA1MWY2YWMyZmU3ZjI2YjZmZDI0ZDAyY2ZjZThjMWQwMzc3YzJiMmRiMzEyNmIyZWNiNzc0Mjk4NjZjMzIzNDgiLCJpYXQiOjE1NzEyODY2NjcsIm5iZiI6MTU3MTI4NjY2NywiZXhwIjoxNjAyOTA5MDY3LCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.AnfYzQhR7QeyLdYQAIpGdRB4zHs2LJub1GEu4kNtzR0J8appQMQ-dYi8fz5W3X4eiE3OSVtcJxcyQGcfQGOYPBlleZfNMKJsMWqQu2z-LgAM0FSlJkyvLfunqymzyttrI3daRrThi7owlb7blNWCMLxkHu5suiiCGYOUd-gjnlp1wR-j3zs8jBlifVpljv3NE4VRNG_DPcnLTiZCj90hbHg5RRbMFvg4k7ccomhCsSIUcbHcpOIi5hveuLAgnAKG2Quc9OMR7k-JZs2FXurAGEDls2PrLdbOQ7kFI9JJxok2gRIWmoj86S3cuXrX_lGJhctla13OqhCuKYM6Oj0WUpkZCx0U-jz81Lirg5ARb4PhdKDyBIWWCpC81uPL1lFJmW-KZfWpibX33Zb1iIBkajOxlTRibpPZ2stmnlr_ptkVtmdO0yLQzjwMT0n8cIWHYMzZ43SFtD_FK46mZNmsODbmNvNyptUCzYP4VOdlcswFqxdbqalvO2JssHwPog0r-W9cf6oUmp2uAPpNuuvhyHDrEUhSmqryV2iD1rm5rT8d1SLPdlji5ahTEfSaxaEcs5i-_KMvjhri6lOrVuiKm2riq90_bFw9c7hwbUi09AepEzEwqf4gMqM5K7erElB4ds5SW-nHA9AttIEkbI0sTDxYhWBRnsB0gh53L5yb0LY' })
 
