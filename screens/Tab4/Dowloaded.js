@@ -112,16 +112,10 @@ export default class Dowloaded extends Component {
         }, 3000);
         // this.loadBookData();
     }
-
-
-
     render() {
         const { is_loadingBook, listViewData } = this.state;
 
-        return (
-
-        
-          
+        return (     
             is_loadingBook ?
                 <Loader />
                 :
