@@ -37,12 +37,14 @@ export default class Player extends Component {
       modalVisible: false,
       chaptersBook: [],
       speed: 1,
-      
+
     };
 
     this.book_id = this.props.navigation.getParam('book_id', '')
     this.play = this.props.navigation.getParam('play')
 
+    console.log('player  this.book_id', this.book_id)
+    console.log('player  this.play', this.play)
   }
 
 
@@ -68,32 +70,38 @@ export default class Player extends Component {
     })
   })
 
-   getData() {
+  getData() {
     AsyncStorage.getItem("token").then((value) => {
       if (value !== null) {
         if (!this.play) {
           console.log('book_id', this.book_id)
-          this.getBookData(value)         
+          this.getBookData(value)
         } else {
           console.log('is book')
 
           AsyncStorage.getItem("book_id").then((book_id) => {
-            console.log('is book',book_id +"---"+this.book_id)
-            if(book_id!==null && this.book_id===book_id){
-              this.getBookData(value) 
-            }else{
-               AsyncStorage.removeItem('book_time');
-              AsyncStorage.setItem('book_id', this.book_id, () => { 
-                this.getBookData(value)  
+            console.log('is book', book_id + "---" + this.book_id)
+            if (book_id !== null && this.book_id === book_id) {
+              this.getBookData(value)
+            } else {
+
+
+              AsyncStorage.removeItem('book_time');
+
+
+              AsyncStorage.setItem('book_id', this.book_id + '', () => {
+
+
+                this.getBookData(value)
               });
             }
-          
+
           })
-          
 
 
-        
-         
+
+
+
 
 
         }
@@ -106,18 +114,20 @@ export default class Player extends Component {
     })
   }
 
-  getBookData(value){
-    
-   const token_is =  this.props.navigation.getParam('token','no');
-   let AuthStr;
-   console.log('aaa',token_is);
-   if(token_is==='no'){
-    AuthStr = 'Bearer '.concat(value);
-   }else{
-    AuthStr = 'Bearer '.concat(token_is);
-   }
-    
-    
+  getBookData(value) {
+
+    console.log('ssssss', value);
+
+    const token_is = this.props.navigation.getParam('token', 'no');
+    let AuthStr;
+    console.log('aaa', token_is);
+    if (token_is === 'no') {
+      AuthStr = 'Bearer '.concat(value);
+    } else {
+      AuthStr = 'Bearer '.concat(token_is);
+    }
+
+
     axios.get('/api/book/' + this.book_id + '/audio', { headers: { Authorization: AuthStr } })
       .then(response => {
         const data = response.data.data;
@@ -126,34 +136,37 @@ export default class Player extends Component {
         AsyncStorage.getItem("book_time").then((book_time) => {
           if (book_time !== null) {
             console.log('book_time', book_time)
-            this.AddTrack(data,book_time );
-           
+            this.AddTrack(data, book_time);
+
           } else {
             console.log('book_time', 'Play')
-           
-            this.AddTrack(data, 0);
             console.log('data12', data);
+            this.AddTrack(data, 0);
           }
         })
 
       }).catch(error => {
-        console.log(error);
+        console.log('error', error.response);
       });
   }
 
   AddTrack(data, book_time) {
     console.log('data3_book_time', book_time);
+    console.log('data3_book_time', data);
 
-    if(book_time==0){
-    console.log('data 333', "0");
-      
+    if (book_time == 0) {
+      console.log('data 333', "0");
+
       TrackPlayer.reset()
     }
-   
-   
+
+
     console.log('data3', data);
     var book_image = encodeURI(data.book_image);
     var audio_file = encodeURI(data.audio_file);
+    // var audio_file = 'http://sapatest.kz/media_doc/2020/03/05/jay.mp3';
+    console.log('audio_file', audio_file);
+    console.log('data 333', "1");
 
     TrackPlayer.add({
 
@@ -165,15 +178,19 @@ export default class Player extends Component {
 
 
     });
+    console.log('data 333', "2");
+
     TrackPlayer.setRate(this.state.speed);
 
 
     isPlaying = true;
 
+    console.log('data 333', "3");
 
     SystemSetting.setVolume(0.5, {
       type: 'music'
     })
+    console.log('data 333', "4");
 
     this.setState({
       volume: 0.5,
@@ -184,18 +201,19 @@ export default class Player extends Component {
       is_loading: false
     });
     this.getChapter(this.book_id);
-   
-    if(book_time==0){
-      console.log('data 333', "0");
-      TrackPlayer.play();   
-    }else{
+    console.log('data 333', "5");
+
+    if (book_time == 0) {
+      console.log('data 333', "0000000");
+      TrackPlayer.play();
+    } else {
       console.log('data 333', "book");
       TrackPlayer.seekTo(Number(book_time))
-      TrackPlayer.play();   
+      TrackPlayer.play();
     }
 
-    
-   
+
+
   }
 
   // getData() {
@@ -285,7 +303,7 @@ export default class Player extends Component {
   getChapter(book_id) {
     axios.get('/api/book/' + book_id + '/chapters')
       .then(response => {
-        console.log('chapters', response);
+        console.log('chapters', response.data.data);
         this.setState({
           chaptersBook: response.data.data
         });

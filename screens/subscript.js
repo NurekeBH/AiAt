@@ -59,7 +59,7 @@ export default class Subscript extends Component {
                 console.log("AuthStr", value)
                 axios.get('/api/subscription/free', { headers: { Authorization: AuthStr } })
                     .then(response => {
-                        console.log('response', response.data)
+                        console.log('free response', response.data)
                         this.setState({
                             message: response.data.success
                         })

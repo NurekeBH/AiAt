@@ -70,7 +70,7 @@ export default class Profile extends Component {
         ActionSheet.actionsheetInstance = null;
         axios.get('/api/get-status')
             .then(response => {
-                if (response.data.version == 9 && Platform.OS === 'ios') {
+                if (response.data.version == 10 && Platform.OS === 'ios') {
                     this.setState({
                         sub_visible: false
                     });

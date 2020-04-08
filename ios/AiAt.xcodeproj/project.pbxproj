@@ -10,6 +10,7 @@
 		00E356F31AD99517003FC87E /* AiAtTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* AiAtTests.m */; };
 		02DB5380ED37D2C1CCDB13C5 /* libPods-AiAtTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E923BF1B09BD17681AB786B /* libPods-AiAtTests.a */; };
 		0BF5F02218954D849941596E /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10934C8208634BF68559FAFD /* FontAwesome5_Brands.ttf */; };
+		0DC941112624FE486978C989 /* libPods-AiAt-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA202C46DD88E066040B3231 /* libPods-AiAt-tvOSTests.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -26,17 +27,16 @@
 		38C3C05D20314064804D5276 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94AE9B00C71F4147AC66AB4F /* Foundation.ttf */; };
 		42C8E7CD901C4BCEB7E16259 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 966C9DC6617940B2A5704AA3 /* MaterialCommunityIcons.ttf */; };
 		48D80FC8A04B49DC9066067A /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8634AECF8E1E4770904D4F0D /* Zocial.ttf */; };
-		59799A5F1BA8B430325BF0E3 /* libPods-AiAt-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A50E651C8E4278914F1CB7 /* libPods-AiAt-tvOS.a */; };
 		6592BF8D5D6C4709B275D8D7 /* rubicon-icon-font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60CEEC2067D345D5B712F3E3 /* rubicon-icon-font.ttf */; };
 		6DB25DF1CDD2455DA714FAFC /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BE85720B5204DDE80666CA5 /* Feather.ttf */; };
 		6F55D0ED8F494D03A882901C /* Roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE922C8D4C504D21B375CC23 /* Roboto.ttf */; };
 		7C686D2CFDDF42F086E15F65 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63EC024ED29B4B70B5143B47 /* MaterialIcons.ttf */; };
 		9855B2B72E154711A86081DD /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 99CD1E3231D341D790796686 /* SimpleLineIcons.ttf */; };
+		A0AAF111290E46D88E4F40BA /* libPods-AiAt-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0431271B4A81A06D844E96DB /* libPods-AiAt-tvOS.a */; };
 		B8E95554628246A696A97276 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86C155DF22BB4539945C4470 /* EvilIcons.ttf */; };
 		C1A54EBACE24423E966F7BFA /* Roboto_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 693398AC8B8A4EBE90126548 /* Roboto_medium.ttf */; };
 		C43BFF5DEBE34FEC85FD772D /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB19CB2112854C92B9691C2C /* FontAwesome5_Solid.ttf */; };
 		DA8276716213E5B9AC95583A /* libPods-AiAt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DA33F8FC6D703720B115F26 /* libPods-AiAt.a */; };
-		E91E8EE0D31518FE705B9165 /* libPods-AiAt-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F90571E0485944F090C6A42 /* libPods-AiAt-tvOSTests.a */; };
 		F2919A975F7D4C2FA5B71D9F /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52C325203A8F4CA0ABABC613 /* FontAwesome5_Regular.ttf */; };
 		F59D018A238BC5CD001A483C /* dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59D0189238BC5CD001A483C /* dummy.swift */; };
 		F86878391E18445DB4F4F73E /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 616186B22B4B402D893BAAF8 /* Ionicons.ttf */; };
@@ -64,6 +64,7 @@
 		00E356EE1AD99517003FC87E /* AiAtTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AiAtTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* AiAtTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AiAtTests.m; sourceTree = "<group>"; };
+		0431271B4A81A06D844E96DB /* libPods-AiAt-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AiAt-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BE85720B5204DDE80666CA5 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/native-base/Fonts/Feather.ttf"; sourceTree = "<group>"; };
 		10934C8208634BF68559FAFD /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/native-base/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* AiAt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AiAt.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,8 +74,8 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = AiAt/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = AiAt/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = AiAt/main.m; sourceTree = "<group>"; };
-		1F90571E0485944F090C6A42 /* libPods-AiAt-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AiAt-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BC16F6702EFED3630CDCE64 /* Pods-AiAtTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiAtTests.release.xcconfig"; path = "Target Support Files/Pods-AiAtTests/Pods-AiAtTests.release.xcconfig"; sourceTree = "<group>"; };
+		2CB72B7BD6B5B893384C5AED /* Pods-AiAt-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiAt-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-AiAt-tvOSTests/Pods-AiAt-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* AiAt-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AiAt-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* AiAt-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AiAt-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E923BF1B09BD17681AB786B /* libPods-AiAtTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AiAtTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,23 +83,21 @@
 		59BEE80C5267469CA4149032 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/native-base/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
 		60CEEC2067D345D5B712F3E3 /* rubicon-icon-font.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "rubicon-icon-font.ttf"; path = "../node_modules/native-base/Fonts/rubicon-icon-font.ttf"; sourceTree = "<group>"; };
 		616186B22B4B402D893BAAF8 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/native-base/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
-		62AF67CFDACD55854FA909CA /* Pods-AiAt-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiAt-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-AiAt-tvOSTests/Pods-AiAt-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		63EC024ED29B4B70B5143B47 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/native-base/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		693398AC8B8A4EBE90126548 /* Roboto_medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Roboto_medium.ttf; path = "../node_modules/native-base/Fonts/Roboto_medium.ttf"; sourceTree = "<group>"; };
+		77F8595E5EDE623E2CCCA713 /* Pods-AiAt-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiAt-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-AiAt-tvOSTests/Pods-AiAt-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		83C14FA7BDA847FB8ACA3D0E /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/native-base/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
+		844416EC2ABD1F979E313AD4 /* Pods-AiAt-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiAt-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-AiAt-tvOS/Pods-AiAt-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		8634AECF8E1E4770904D4F0D /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/native-base/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		86C155DF22BB4539945C4470 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/native-base/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
-		88ADC46149420BA59369A017 /* Pods-AiAt-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiAt-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-AiAt-tvOSTests/Pods-AiAt-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		8A98124BC7C3BB99E2A6117F /* Pods-AiAt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiAt.debug.xcconfig"; path = "Target Support Files/Pods-AiAt/Pods-AiAt.debug.xcconfig"; sourceTree = "<group>"; };
 		8DA33F8FC6D703720B115F26 /* libPods-AiAt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AiAt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94AE9B00C71F4147AC66AB4F /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/native-base/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		966C9DC6617940B2A5704AA3 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/native-base/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		99CD1E3231D341D790796686 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/native-base/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
-		9CDE1432A0E37E0A026C84D3 /* Pods-AiAt-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiAt-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-AiAt-tvOS/Pods-AiAt-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		AA4C7B249D60CB73E3FBC0BE /* Pods-AiAt-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiAt-tvOS.release.xcconfig"; path = "Target Support Files/Pods-AiAt-tvOS/Pods-AiAt-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		B61409D4885D48C0B171E661 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/native-base/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		BD22D961E986DF723170D7D1 /* Pods-AiAt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiAt.release.xcconfig"; path = "Target Support Files/Pods-AiAt/Pods-AiAt.release.xcconfig"; sourceTree = "<group>"; };
-		C4A50E651C8E4278914F1CB7 /* libPods-AiAt-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AiAt-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C67878191A77DB1FFAC28ABA /* Pods-AiAt-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiAt-tvOS.release.xcconfig"; path = "Target Support Files/Pods-AiAt-tvOS/Pods-AiAt-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		CB19CB2112854C92B9691C2C /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/native-base/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
 		D0AC450386412912AB9DCB1B /* Pods-AiAtTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiAtTests.debug.xcconfig"; path = "Target Support Files/Pods-AiAtTests/Pods-AiAtTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D5FC7A8D47084BC1AF14A3C5 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/native-base/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
@@ -108,6 +107,7 @@
 		F2506887F1C748A68EAD8F3E /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/native-base/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		F59D0188238BC5CD001A483C /* AiAt-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AiAt-Bridging-Header.h"; sourceTree = "<group>"; };
 		F59D0189238BC5CD001A483C /* dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dummy.swift; sourceTree = "<group>"; };
+		FA202C46DD88E066040B3231 /* libPods-AiAt-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AiAt-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59799A5F1BA8B430325BF0E3 /* libPods-AiAt-tvOS.a in Frameworks */,
+				A0AAF111290E46D88E4F40BA /* libPods-AiAt-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E91E8EE0D31518FE705B9165 /* libPods-AiAt-tvOSTests.a in Frameworks */,
+				0DC941112624FE486978C989 /* libPods-AiAt-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,9 +183,9 @@
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				8DA33F8FC6D703720B115F26 /* libPods-AiAt.a */,
-				C4A50E651C8E4278914F1CB7 /* libPods-AiAt-tvOS.a */,
-				1F90571E0485944F090C6A42 /* libPods-AiAt-tvOSTests.a */,
 				2E923BF1B09BD17681AB786B /* libPods-AiAtTests.a */,
+				0431271B4A81A06D844E96DB /* libPods-AiAt-tvOS.a */,
+				FA202C46DD88E066040B3231 /* libPods-AiAt-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -231,12 +231,12 @@
 			children = (
 				8A98124BC7C3BB99E2A6117F /* Pods-AiAt.debug.xcconfig */,
 				BD22D961E986DF723170D7D1 /* Pods-AiAt.release.xcconfig */,
-				9CDE1432A0E37E0A026C84D3 /* Pods-AiAt-tvOS.debug.xcconfig */,
-				C67878191A77DB1FFAC28ABA /* Pods-AiAt-tvOS.release.xcconfig */,
-				62AF67CFDACD55854FA909CA /* Pods-AiAt-tvOSTests.debug.xcconfig */,
-				88ADC46149420BA59369A017 /* Pods-AiAt-tvOSTests.release.xcconfig */,
 				D0AC450386412912AB9DCB1B /* Pods-AiAtTests.debug.xcconfig */,
 				2BC16F6702EFED3630CDCE64 /* Pods-AiAtTests.release.xcconfig */,
+				844416EC2ABD1F979E313AD4 /* Pods-AiAt-tvOS.debug.xcconfig */,
+				AA4C7B249D60CB73E3FBC0BE /* Pods-AiAt-tvOS.release.xcconfig */,
+				2CB72B7BD6B5B893384C5AED /* Pods-AiAt-tvOSTests.debug.xcconfig */,
+				77F8595E5EDE623E2CCCA713 /* Pods-AiAt-tvOSTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -313,7 +313,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "AiAt-tvOS" */;
 			buildPhases = (
-				A2369D751723DA968F0DF8C9 /* [CP] Check Pods Manifest.lock */,
+				79521D803A67704F88D3FFAD /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -333,7 +333,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "AiAt-tvOSTests" */;
 			buildPhases = (
-				26BB30429D65158EEE3D09D5 /* [CP] Check Pods Manifest.lock */,
+				721FD42BC3FA3C9B4EB5BCD1 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -467,7 +467,21 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		26BB30429D65158EEE3D09D5 /* [CP] Check Pods Manifest.lock */ = {
+		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native Code And Images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		721FD42BC3FA3C9B4EB5BCD1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -488,20 +502,6 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
-		};
-		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Bundle React Native Code And Images";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
 		72BE6594142889B586E6C56F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -525,7 +525,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A2369D751723DA968F0DF8C9 /* [CP] Check Pods Manifest.lock */ = {
+		79521D803A67704F88D3FFAD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -726,12 +726,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 18;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = 6W6XXZ7M8W;
 				INFOPLIST_FILE = AiAt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 15.0;
+				MARKETING_VERSION = 18.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -752,11 +752,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = 6W6XXZ7M8W;
 				INFOPLIST_FILE = AiAt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 15.0;
+				MARKETING_VERSION = 18.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -772,7 +772,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9CDE1432A0E37E0A026C84D3 /* Pods-AiAt-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 844416EC2ABD1F979E313AD4 /* Pods-AiAt-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -800,7 +800,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C67878191A77DB1FFAC28ABA /* Pods-AiAt-tvOS.release.xcconfig */;
+			baseConfigurationReference = AA4C7B249D60CB73E3FBC0BE /* Pods-AiAt-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -828,7 +828,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62AF67CFDACD55854FA909CA /* Pods-AiAt-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 2CB72B7BD6B5B893384C5AED /* Pods-AiAt-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -855,7 +855,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88ADC46149420BA59369A017 /* Pods-AiAt-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = 77F8595E5EDE623E2CCCA713 /* Pods-AiAt-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;

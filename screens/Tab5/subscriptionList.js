@@ -92,60 +92,67 @@ export default class SubscriptionList extends Component {
                             :
                             <View style={{ justifyContent: 'center', }}>
                                 {
-                                    this.props.navigation.getParam('left_day')==0?
-                                    <Text style={{ fontSize: 20, color: 'black', textAlign: 'center', margin: 16, lineHeight: 24, fontWeight: 'bold' }}>{strings.no_subscription} </Text>
-                                    :
-                                    <Text style={{ fontSize: 20, color: 'black', textAlign: 'center', margin: 16, lineHeight: 24, fontWeight: 'bold' }}>{strings.left1 + this.props.navigation.getParam('left_day') + strings.day} </Text>
+                                    this.props.navigation.getParam('left_day') == 0 ?
+                                        <Text style={{ fontSize: 20, color: 'black', textAlign: 'center', margin: 16, lineHeight: 24, fontWeight: 'bold' }}>{strings.no_subscription} </Text>
+                                        :
+                                        <Text style={{ fontSize: 20, color: 'black', textAlign: 'center', margin: 16, lineHeight: 24, fontWeight: 'bold' }}>{strings.left1 + this.props.navigation.getParam('left_day') + strings.day} </Text>
 
                                 }
                                 <Text style={{ textAlign: 'center', fontSize: 17, color: 'black', margin: 16, lineHeight: 20 }}>{text1.text} </Text>
 
                                 {
                                     subscriptData.map((item, position) => (
-                                        <TouchableWithoutFeedback
-                                            onPress={this.SampleFunction.bind(this, position)}
-                                        >
-                                            {
-                                                selected === position ?
-                                                    <View style={{ backgroundColor: 'white', borderColor: '#ff5005', borderWidth: 2, marginLeft: 16, marginRight: 16, marginTop: 10, padding: 16 }}>
-                                                        <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-between' }}>
-                                                            <Text style={{ fontSize: 17, color: 'black' }}>{item.sub_name}</Text>
-                                                            <Text style={{ fontSize: 17, color: 'black' }}>{item.sub_cost}</Text>
+                                        <View>
+                                            {!item.is_free?
+                                            <TouchableWithoutFeedback
+                                                onPress={this.SampleFunction.bind(this, position)}
+                                            >
+                                                {
+                                                    selected === position ?
+                                                        <View style={{ backgroundColor: 'white', borderColor: '#ff5005', borderWidth: 2, marginLeft: 16, marginRight: 16, marginTop: 10, padding: 16 }}>
+                                                            <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-between' }}>
+                                                                <Text style={{ fontSize: 17, color: 'black' }}>{item.sub_name}</Text>
+                                                                <Text style={{ fontSize: 17, color: 'black' }}>{item.sub_cost}</Text>
+                                                            </View>
+                                                            <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-between', marginTop: 4 }}>
+                                                                <Text style={{ fontSize: 13, color: '#A8A8A8' }}></Text>
+                                                                {
+                                                                    item.sub_discount == null ?
+                                                                        <Text style={{ fontSize: 13, color: '#A8A8A8' }}></Text>
+                                                                        :
+                                                                        <Text style={{ fontSize: 13, color: '#A8A8A8' }}>{strings.discount1 + item.sub_discount + strings.discount2}</Text>
+                                                                }
+
+                                                            </View>
                                                         </View>
-                                                        <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-between', marginTop: 4 }}>
-                                                            <Text style={{ fontSize: 13, color: '#A8A8A8' }}></Text>
-                                                            {
-                                                                item.sub_discount == null ?
-                                                                    <Text style={{ fontSize: 13, color: '#A8A8A8' }}></Text>
-                                                                    :
-                                                                    <Text style={{ fontSize: 13, color: '#A8A8A8' }}>{strings.discount1 + item.sub_discount + strings.discount2}</Text>
-                                                            }
+                                                        :
+                                                        <View style={{ backgroundColor: 'white', borderColor: '#ffcc15', borderWidth: 2, marginLeft: 16, marginRight: 16, marginTop: 10, padding: 16 }}>
+                                                            <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-between' }}>
+                                                                <Text style={{ fontSize: 17, color: 'black' }}>{item.sub_name}</Text>
+                                                                <Text style={{ fontSize: 17, color: 'black' }}>{item.sub_cost}</Text>
+                                                            </View>
+                                                            <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-between', marginTop: 4 }}>
+                                                                <Text style={{ fontSize: 13, color: '#A8A8A8' }}></Text>
+                                                                {
+                                                                    item.sub_discount == null ?
+                                                                        <Text style={{ fontSize: 13, color: '#A8A8A8' }}></Text>
+                                                                        :
+                                                                        <Text style={{ fontSize: 13, color: '#A8A8A8' }}>{strings.discount1 + item.sub_discount + strings.discount2}</Text>
 
+                                                                }
+
+                                                            </View>
                                                         </View>
-                                                    </View>
-                                                    :
-                                                    <View style={{ backgroundColor: 'white', borderColor: '#ffcc15', borderWidth: 2, marginLeft: 16, marginRight: 16, marginTop: 10, padding: 16 }}>
-                                                        <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-between' }}>
-                                                            <Text style={{ fontSize: 17, color: 'black' }}>{item.sub_name}</Text>
-                                                            <Text style={{ fontSize: 17, color: 'black' }}>{item.sub_cost}</Text>
-                                                        </View>
-                                                        <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-between', marginTop: 4 }}>
-                                                            <Text style={{ fontSize: 13, color: '#A8A8A8' }}></Text>
-                                                            {
-                                                                item.sub_discount == null ?
-                                                                    <Text style={{ fontSize: 13, color: '#A8A8A8' }}></Text>
-                                                                    :
-                                                                    <Text style={{ fontSize: 13, color: '#A8A8A8' }}>{strings.discount1 + item.sub_discount + strings.discount2}</Text>
-
-                                                            }
-
-                                                        </View>
-                                                    </View>
-                                            }
+                                                }
 
 
 
-                                        </TouchableWithoutFeedback>
+                                            </TouchableWithoutFeedback>
+                                            :
+                                            null
+    }
+                                        </View>
+
                                     ))
                                 }
 

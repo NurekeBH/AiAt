@@ -31,7 +31,7 @@ export default class Tab1Screen extends Component {
 
   componentDidMount() {
     this.loadSliderData();
-  }
+   }
 
 
   loadSliderData = () => {
@@ -45,7 +45,7 @@ export default class Tab1Screen extends Component {
         this.loadCollectionData();
       })
       .catch(error => {
-        console.log(error);
+        console.log('error',error.response);
       });
   }
   loadCollectionData = () => {
@@ -59,7 +59,7 @@ export default class Tab1Screen extends Component {
         this.loadBookData();
       })
       .catch(error => {
-        console.log(error);
+        console.log('error',error.response);
       });
   }
 
@@ -90,7 +90,7 @@ export default class Tab1Screen extends Component {
 
           })
           .catch(error => {
-            console.log(error);
+            console.log('error',error.response);
           });
       })
     }
