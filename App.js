@@ -17,7 +17,7 @@ export default class App extends Component {
 
 
 
-    axios.defaults.baseURL = 'http://aiat.bgpro.kz';
+    axios.defaults.baseURL = 'https://aiat.bgpro.kz';
 
     AsyncStorage.getItem("lang").then((value) => {
      console.log('1value lang - ',value)
