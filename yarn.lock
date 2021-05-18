@@ -5547,10 +5547,10 @@ react-native-easy-grid@0.2.2:
   dependencies:
     lodash "^4.17.15"
 
-react-native-fast-image@^7.0.2:
-  version "7.0.2"
-  resolved "https://registry.yarnpkg.com/react-native-fast-image/-/react-native-fast-image-7.0.2.tgz#e06b21f42f4a9786eaa86f3db35d919070fb8403"
-  integrity sha512-MfuzJbC0RjYobR2gFCdqe1I7jvNOCfDkjQ7VGOHXniqjohhULMkcWNBE9Umovi9Dx93lJ6t5utcE2wf/09zvlg==
+react-native-fast-image@^8.3.0:
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/react-native-fast-image/-/react-native-fast-image-8.3.0.tgz#5821fac5e8759b3a87628600522eb72c579b0b9f"
+  integrity sha512-b0uhUEXKuIWY1WFai30i4LR99kF8OKoOjl6Yqcnc/bydkuE1r7oj0eUNifa7jwD4Pdpeff+uGMrEz27UMap0yQ==
 
 react-native-gesture-handler@^1.5.0:
   version "1.5.0"
@@ -5665,10 +5665,10 @@ react-native-snap-carousel@^3.8.4:
     prop-types "^15.6.1"
     react-addons-shallow-compare "15.6.2"
 
-react-native-swift@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/react-native-swift/-/react-native-swift-1.2.2.tgz#6da9a9b6d8c795a26cda53c1d99ebb5dd1fa0a9b"
-  integrity sha512-lp87GXJKhydpAjZnprpZuJp4Q15tN9ophpcVLZmfceorSSc+uidUSkDQpwgk7EAoCq/jBdw7lTC1vb7UWd5F1Q==
+react-native-swift@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/react-native-swift/-/react-native-swift-1.2.3.tgz#c4ae9c2b8c48c1535ea7fb3d9234d5f206ee47cf"
+  integrity sha512-PmPTjpIRRMns+fViOvL23ke9dvh1bJmHoobPhgkEYTMiz7fzOAX67k0A0RNu9L9Wc57XY5MB+rLMYybBtndQ4w==
   dependencies:
     "@raydeck/xcode" "^2.2.0"
     glob "^7.1.2"
@@ -5688,10 +5688,10 @@ react-native-tab-view@^2.9.0:
   resolved "https://registry.yarnpkg.com/react-native-tab-view/-/react-native-tab-view-2.10.2.tgz#35ae92f574f2220312138f479a99ad3cbf981b6f"
   integrity sha512-DJMz7WDlQiykgvojaEPM5MKFNMlGC89SMhX++wkD6iJ4TK04NyUgvUKsZYuY7u6k0o0HtG7sNeexFsbxfwhrVg==
 
-react-native-track-player@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/react-native-track-player/-/react-native-track-player-1.2.2.tgz#97e6d956ac2de70ed24b2665799d48075750b1e9"
-  integrity sha512-+Fv+dF4D8TRkq9kQ9sWKfqYmmvjkKaA4wGG+PRQO3aHRHnaswZG5o9TFbbY7xaLWNTxmmcSMR0YNcMm/Of91xQ==
+react-native-track-player@^1.1.8:
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/react-native-track-player/-/react-native-track-player-1.2.7.tgz#a721662fc32383cf2979a48b33db091140e88962"
+  integrity sha512-U1kA25qm398/kY6BvTojGHt4S1tYuKrJNQpXW+dA+p0B+n4LlPyoidUXfu951YM7aoisg8EmQPsevUFmcXG+cg==
 
 react-native-vector-icons@^6.6.0:
   version "6.6.0"
