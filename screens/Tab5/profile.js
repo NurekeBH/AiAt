@@ -33,7 +33,7 @@ export default class Profile extends Component {
 
                 axios.get('/api/user', { headers: { Authorization: AuthStr } })
                     .then(response => {
-
+                        console.log('profile', response)
                         if (response.data.status) {
 
                             this.setState({
@@ -70,7 +70,7 @@ export default class Profile extends Component {
         ActionSheet.actionsheetInstance = null;
         axios.get('/api/get-status')
             .then(response => {
-                if (response.data.version == 10 && Platform.OS === 'ios') {
+                if (response.data.version == 11 && Platform.OS === 'ios') {
                     this.setState({
                         sub_visible: false
                     });
@@ -99,7 +99,7 @@ export default class Profile extends Component {
                     RNRestart.Restart();
                 });
             });
-            
+
         }
 
 
@@ -142,8 +142,8 @@ export default class Profile extends Component {
                                         </View>
 
                                         <Button transparent style={{ width: 48, height: 48, justifyContent: 'center' }}
-                                            onPress={() => this.props.navigation.navigate('ChangeProfile',{ user_name: data.user_name, avatar: data.avatar})}>
-                                           
+                                            onPress={() => this.props.navigation.navigate('ChangeProfile', { user_name: data.user_name, avatar: data.avatar })}>
+
                                             {/* <SvgUri  source={require('../img/edit.svg')} />    */}
                                             <Image source={require('../../img/edit.png')} style={{ width: 23, height: 23 }} />
 
@@ -157,7 +157,7 @@ export default class Profile extends Component {
                                     {
                                         sub_visible ?
                                             <View style={{ backgroundColor: 'white' }} >
-                                                <Button transparent style={{ height: 70, }} onPress={() => { this.props.navigation.navigate('SubscriptionList',{left_day: data.left_day}) }}>  
+                                                <Button transparent style={{ height: 70, }} onPress={() => { this.props.navigation.navigate('SubscriptionList', { left_day: data.left_day }) }}>
                                                     <View style={{ flexDirection: 'row', padding: 16, }} >
                                                         <Image source={require('../../img/music.png')} style={{ width: 16, height: 16 }} />
                                                         <View style={{ flex: 1, marginLeft: 16, justifyContent: 'center', }}>

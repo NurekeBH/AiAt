@@ -31,7 +31,7 @@ export default class Tab1Screen extends Component {
 
   componentDidMount() {
     this.loadSliderData();
-   }
+  }
 
 
   loadSliderData = () => {
@@ -45,7 +45,7 @@ export default class Tab1Screen extends Component {
         this.loadCollectionData();
       })
       .catch(error => {
-        console.log('error',error.response);
+        console.log('error', error.response);
       });
   }
   loadCollectionData = () => {
@@ -59,7 +59,7 @@ export default class Tab1Screen extends Component {
         this.loadBookData();
       })
       .catch(error => {
-        console.log('error',error.response);
+        console.log('error', error.response);
       });
   }
 
@@ -70,6 +70,7 @@ export default class Tab1Screen extends Component {
 
         axios.get('/api/book?page=' + this.offset)
           .then(response => {
+            console.log('book', response)
             if (response.data.data.length > 0) {
               this.offset = this.offset + 1;
               this.setState({
@@ -90,7 +91,7 @@ export default class Tab1Screen extends Component {
 
           })
           .catch(error => {
-            console.log('error',error.response);
+            console.log('error', error.response);
           });
       })
     }
@@ -160,7 +161,7 @@ export default class Tab1Screen extends Component {
     >
       <View style={{ flex: 1, backgroundColor: 'white' }}>
         <View style={{ flex: 1, flexDirection: 'row', }}>
-          <FastImage source={{ uri: item.book_image }} style={{ height: 140, width: 110, margin: 16, borderColor:'#E1E2E0', borderWidth:1 }} />
+          <FastImage source={{ uri: item.book_image }} style={{ height: 140, width: 110, margin: 16, borderColor: '#E1E2E0', borderWidth: 1 }} />
           <View style={{ flex: 1, marginTop: 16 }}>
             <Text style={{ fontSize: 15, color: 'grey' }}>{item.author}</Text>
             <Text style={{ fontSize: 17, color: 'black' }}>{item.book_name}</Text>
@@ -217,9 +218,9 @@ export default class Tab1Screen extends Component {
         <Container>
           <View style={{ alignItems: 'center', justifyContent: 'center', backgroundColor: 'white', height: 70 }}>
 
-            <Item regular style={{ width: '90%', height: 48, borderRadius: 5 }} onPress={()=> this.props.navigation.navigate('SearchBook')} >
+            <Item regular style={{ width: '90%', height: 48, borderRadius: 5 }} onPress={() => this.props.navigation.navigate('SearchBook')} >
               <Icon name="ios-search" />
-              <Text style={{color:'grey'}} >{strings.search}</Text>
+              <Text style={{ color: 'grey' }} >{strings.search}</Text>
             </Item>
           </View>
 

@@ -113,6 +113,7 @@ export default class DetailBook extends Component {
         const AuthStr = 'Bearer '.concat(value);
         axios.get('/api/book/' + this.book_id + '/audio', { headers: { Authorization: AuthStr } })
           .then(response => {
+            console.log('detailbook',response)
             console.log('PlayBook', response.data);
             if (response.data.status) {
               this.props.navigation.navigate('OpenPlayer', { play: true, book_id: this.book_id })
@@ -121,7 +122,7 @@ export default class DetailBook extends Component {
                 .then(response2 => {
                   console.log('PlayBook2', response2.data);
 
-                  if (response2.data.version == 10 && Platform.OS === 'ios') {
+                  if (response2.data.version == 11 && Platform.OS === 'ios') {
                     _navigation.navigate('OpenPlayer', { play: true, book_id: this.book_id, token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImI1NTZjMTlhMThlMjM4ZmY1ZjViMzQwNTZkMDM4OTZlMTMxYzFmOWU1MWI2ODBmZGJlOTgzOTUzNTBhMzhkMjM5NTZiZDE0MTYyYTc3MTBlIn0.eyJhdWQiOiIxIiwianRpIjoiYjU1NmMxOWExOGUyMzhmZjVmNWIzNDA1NmQwMzg5NmUxMzFjMWY5ZTUxYjY4MGZkYmU5ODM5NTM1MGEzOGQyMzk1NmJkMTQxNjJhNzcxMGUiLCJpYXQiOjE1Nzk4NDY0NDQsIm5iZiI6MTU3OTg0NjQ0NCwiZXhwIjoxNjExNDY4ODQ0LCJzdWIiOiI1MCIsInNjb3BlcyI6W119.Y55wNZakehyFOw0auDv1dPvyAobtmmkSQatgKCftJxwXfg9VaSaLvYMH3XZ_ZtANj3dtJyHPFl3clEmG6979GZ9ftT6ft1dF3H5ZxQqUrA7ggqBMblj00HdU7yhUftP7RXS4yFNw-tks_hSvEoE1uDkTvDROWgv4VJ9Ju7II5ZwtZWS3USTZBMy_4OdWJOwsncnYbN5Jvy1tfVWxYobOtd5jZFeVG0KiAKErqykuzM6nyWnkBM2T0ZqTJ3ZQYKF7_DHgyl_zuLsdkvca9E4auq7JYNYNxK0uYHyN6Fsvg7bFdD1yL2txhKbkDl_OoDHY556M8z8V7yzILETC-jdfiXmEC_Lo7pb8YlmJFi7oTw-sxbGaGz--ciWD44ymQ_I61UAs6zEvWSNPikQILswAEMIecHV1qHM6n1a-j9za70nOEIAFZ91JJjcWVfppJt7w_0qFcmsKagAOYbi4R1P-YIrzA88Igp_3v8JMdDqBdm7I08LxMXkVzpmSYemgYlH9YZmpheWWzC-dnSEnVDV3cimN23dNsmfwd-JSCIDyZNdsJAmpHAIsNRMHj2AUwWXfSt9_2T0enoc8Nj18x2gTjIMx-HXUESjnazWG81DwAItr09ZhWM_ioMdwAralyby_62yybR79F0jigyj401hSsvOpNFQ5hUffIncWF1am_wE' })
                   } else {
 

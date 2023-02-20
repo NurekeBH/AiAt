@@ -41,6 +41,7 @@ export default class BookByCatalog extends Component {
         console.log('uuuuuuuu', '/api/book?genre_id=' + this.props.navigation.getParam('item').genre_id + '&page=' + this.offset)
         axios.get('/api/book?genre_id=' + this.props.navigation.getParam('item').genre_id + '&page=' + this.offset)
           .then(response => {
+            console.log('BookByCatalog: ', response)
             if (response.data.data.length > 0) {
               this.offset = this.offset + 1;
               this.setState({
@@ -93,7 +94,7 @@ export default class BookByCatalog extends Component {
     >
       <View style={{ flex: 1, backgroundColor: 'white' }}>
         <View style={{ flex: 1, flexDirection: 'row', }}>
-          <FastImage source={{ uri: item.book_image }} style={{ height: 140, width: 110, margin: 16, borderColor:'#E1E2E0', borderWidth:1 }}  />
+          <FastImage source={{ uri: item.book_image }} style={{ height: 140, width: 110, margin: 16, borderColor: '#E1E2E0', borderWidth: 1 }} />
           <View style={{ flex: 1, marginTop: 16 }}>
             <Text style={{ fontSize: 15, color: 'grey' }}>{item.author}</Text>
             <Text style={{ fontSize: 17, color: 'black' }}>{item.book_name}</Text>

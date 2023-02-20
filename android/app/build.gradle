@@ -131,8 +131,8 @@ android {
         applicationId "kz.aiat.www"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 11
-        versionName "11.0"
+        versionCode 13
+        versionName '13.0'
         multiDexEnabled true
     }
     splits {
